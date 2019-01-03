@@ -1,0 +1,417 @@
+2018-08-19T00:42:38.468+0900 I CONTROL  [initandlisten] MongoDB starting : pid=1083 port=27017 dbpath=/data/db 64-bit host=Seungjinui-MacBook-Pro.local
+2018-08-19T00:42:38.469+0900 I CONTROL  [initandlisten] db version v3.6.4
+2018-08-19T00:42:38.469+0900 I CONTROL  [initandlisten] git version: d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856
+2018-08-19T00:42:38.469+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
+2018-08-19T00:42:38.469+0900 I CONTROL  [initandlisten] allocator: system
+2018-08-19T00:42:38.469+0900 I CONTROL  [initandlisten] modules: none
+2018-08-19T00:42:38.469+0900 I CONTROL  [initandlisten] build environment:
+2018-08-19T00:42:38.469+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-19T00:42:38.469+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-19T00:42:38.469+0900 I CONTROL  [initandlisten] options: {}
+2018-08-19T00:42:38.469+0900 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2018-08-19T00:42:38.470+0900 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-19T00:42:38.470+0900 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-08-19T00:42:38.470+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-19T00:42:39.429+0900 I STORAGE  [initandlisten] WiredTiger message [1534606959:429090][1083:0x7fff9f36c340], txn-recover: Main recovery loop: starting at 14/3456
+2018-08-19T00:42:39.429+0900 I STORAGE  [initandlisten] WiredTiger message [1534606959:429769][1083:0x7fff9f36c340], txn-recover: Recovering log 14 through 15
+2018-08-19T00:42:39.558+0900 I STORAGE  [initandlisten] WiredTiger message [1534606959:558889][1083:0x7fff9f36c340], txn-recover: Recovering log 15 through 15
+2018-08-19T00:42:39.756+0900 I STORAGE  [initandlisten] WiredTiger message [1534606959:756581][1083:0x7fff9f36c340], txn-recover: Set global recovery timestamp: 0
+2018-08-19T00:42:39.856+0900 I CONTROL  [initandlisten] 
+2018-08-19T00:42:39.856+0900 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-19T00:42:39.856+0900 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-19T00:42:39.856+0900 I CONTROL  [initandlisten] 
+2018-08-19T00:42:39.856+0900 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-08-19T00:42:39.856+0900 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-08-19T00:42:39.856+0900 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-08-19T00:42:39.856+0900 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-08-19T00:42:39.856+0900 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-08-19T00:42:39.856+0900 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-08-19T00:42:39.856+0900 I CONTROL  [initandlisten] 
+2018-08-19T00:42:39.857+0900 I CONTROL  [initandlisten] 
+2018-08-19T00:42:39.857+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-08-19T00:42:39.891+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-08-19T00:42:39.892+0900 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-19T00:42:40.038+0900 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-08-19T00:42:43.106+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49612 #1 (1 connection now open)
+2018-08-19T00:42:43.118+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:49612 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T00:45:05.844+0900 I NETWORK  [conn1] end connection 127.0.0.1:49612 (0 connections now open)
+2018-08-19T00:47:11.808+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49655 #2 (1 connection now open)
+2018-08-19T00:47:11.818+0900 I NETWORK  [conn2] received client metadata from 127.0.0.1:49655 conn2: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T01:26:11.153+0900 I NETWORK  [conn2] end connection 127.0.0.1:49655 (0 connections now open)
+2018-08-19T01:26:23.546+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:52361 #3 (1 connection now open)
+2018-08-19T01:26:23.561+0900 I NETWORK  [conn3] received client metadata from 127.0.0.1:52361 conn3: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T01:46:14.660+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:53836 #4 (2 connections now open)
+2018-08-19T03:07:53.967+0900 I NETWORK  [conn4] end connection 127.0.0.1:53836 (1 connection now open)
+2018-08-19T03:07:53.967+0900 I NETWORK  [conn3] end connection 127.0.0.1:52361 (0 connections now open)
+2018-08-19T03:07:58.910+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49440 #5 (1 connection now open)
+2018-08-19T03:07:58.925+0900 I NETWORK  [conn5] received client metadata from 127.0.0.1:49440 conn5: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T04:04:40.680+0900 I NETWORK  [conn5] end connection 127.0.0.1:49440 (0 connections now open)
+2018-08-19T09:41:18.879+0900 I CONTROL  [initandlisten] MongoDB starting : pid=720 port=27017 dbpath=/data/db 64-bit host=Seungjinui-MacBook-Pro.local
+2018-08-19T09:41:18.879+0900 I CONTROL  [initandlisten] db version v3.6.4
+2018-08-19T09:41:18.879+0900 I CONTROL  [initandlisten] git version: d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856
+2018-08-19T09:41:18.879+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
+2018-08-19T09:41:18.879+0900 I CONTROL  [initandlisten] allocator: system
+2018-08-19T09:41:18.879+0900 I CONTROL  [initandlisten] modules: none
+2018-08-19T09:41:18.879+0900 I CONTROL  [initandlisten] build environment:
+2018-08-19T09:41:18.879+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-19T09:41:18.879+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-19T09:41:18.879+0900 I CONTROL  [initandlisten] options: {}
+2018-08-19T09:41:18.879+0900 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2018-08-19T09:41:18.880+0900 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-19T09:41:18.880+0900 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-08-19T09:41:18.880+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-19T09:41:19.693+0900 I STORAGE  [initandlisten] WiredTiger message [1534639279:693567][720:0x7fff9bfbd340], txn-recover: Main recovery loop: starting at 15/110208
+2018-08-19T09:41:19.694+0900 I STORAGE  [initandlisten] WiredTiger message [1534639279:694155][720:0x7fff9bfbd340], txn-recover: Recovering log 15 through 16
+2018-08-19T09:41:19.761+0900 I STORAGE  [initandlisten] WiredTiger message [1534639279:760986][720:0x7fff9bfbd340], txn-recover: Recovering log 16 through 16
+2018-08-19T09:41:19.890+0900 I STORAGE  [initandlisten] WiredTiger message [1534639279:890156][720:0x7fff9bfbd340], txn-recover: Set global recovery timestamp: 0
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] 
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] 
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] 
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] 
+2018-08-19T09:41:19.990+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-08-19T09:41:20.016+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-08-19T09:41:20.017+0900 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-19T09:41:21.008+0900 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-08-19T09:41:23.852+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49284 #1 (1 connection now open)
+2018-08-19T09:41:23.869+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:49284 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T09:42:47.644+0900 I NETWORK  [conn1] end connection 127.0.0.1:49284 (0 connections now open)
+2018-08-19T13:05:27.030+0900 I CONTROL  [initandlisten] MongoDB starting : pid=1298 port=27017 dbpath=/data/db 64-bit host=Seungjinui-MacBook-Pro.local
+2018-08-19T13:05:27.030+0900 I CONTROL  [initandlisten] db version v3.6.4
+2018-08-19T13:05:27.031+0900 I CONTROL  [initandlisten] git version: d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856
+2018-08-19T13:05:27.031+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
+2018-08-19T13:05:27.031+0900 I CONTROL  [initandlisten] allocator: system
+2018-08-19T13:05:27.031+0900 I CONTROL  [initandlisten] modules: none
+2018-08-19T13:05:27.031+0900 I CONTROL  [initandlisten] build environment:
+2018-08-19T13:05:27.031+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-19T13:05:27.031+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-19T13:05:27.031+0900 I CONTROL  [initandlisten] options: {}
+2018-08-19T13:05:27.031+0900 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2018-08-19T13:05:27.032+0900 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-19T13:05:27.032+0900 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-08-19T13:05:27.032+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-19T13:05:27.817+0900 I STORAGE  [initandlisten] WiredTiger message [1534651527:817735][1298:0x7fff9d162340], txn-recover: Main recovery loop: starting at 16/3712
+2018-08-19T13:05:27.822+0900 I STORAGE  [initandlisten] WiredTiger message [1534651527:822396][1298:0x7fff9d162340], txn-recover: Recovering log 16 through 17
+2018-08-19T13:05:27.886+0900 I STORAGE  [initandlisten] WiredTiger message [1534651527:886261][1298:0x7fff9d162340], txn-recover: Recovering log 17 through 17
+2018-08-19T13:05:28.010+0900 I STORAGE  [initandlisten] WiredTiger message [1534651528:10709][1298:0x7fff9d162340], txn-recover: Set global recovery timestamp: 0
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] 
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] 
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] 
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] 
+2018-08-19T13:05:28.098+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-08-19T13:05:28.123+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-08-19T13:05:28.123+0900 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-19T13:05:29.012+0900 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-08-19T13:05:31.402+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49400 #1 (1 connection now open)
+2018-08-19T13:05:31.419+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:49400 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T13:06:14.239+0900 I NETWORK  [conn1] end connection 127.0.0.1:49400 (0 connections now open)
+2018-08-19T17:13:57.713+0900 I CONTROL  [initandlisten] MongoDB starting : pid=597 port=27017 dbpath=/data/db 64-bit host=Seungjinui-MacBook-Pro.local
+2018-08-19T17:13:57.713+0900 I CONTROL  [initandlisten] db version v3.6.4
+2018-08-19T17:13:57.713+0900 I CONTROL  [initandlisten] git version: d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856
+2018-08-19T17:13:57.713+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
+2018-08-19T17:13:57.713+0900 I CONTROL  [initandlisten] allocator: system
+2018-08-19T17:13:57.713+0900 I CONTROL  [initandlisten] modules: none
+2018-08-19T17:13:57.713+0900 I CONTROL  [initandlisten] build environment:
+2018-08-19T17:13:57.713+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-19T17:13:57.713+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-19T17:13:57.713+0900 I CONTROL  [initandlisten] options: {}
+2018-08-19T17:13:57.713+0900 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2018-08-19T17:13:57.714+0900 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-19T17:13:57.714+0900 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-08-19T17:13:57.714+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-19T17:13:58.533+0900 I STORAGE  [initandlisten] WiredTiger message [1534666438:533525][597:0x7fffaa54a340], txn-recover: Main recovery loop: starting at 17/256
+2018-08-19T17:13:58.535+0900 I STORAGE  [initandlisten] WiredTiger message [1534666438:535060][597:0x7fffaa54a340], txn-recover: Recovering log 17 through 18
+2018-08-19T17:13:58.606+0900 I STORAGE  [initandlisten] WiredTiger message [1534666438:606164][597:0x7fffaa54a340], file:index-1-3618629488836829015.wt, txn-recover: Recovering log 18 through 18
+2018-08-19T17:13:58.768+0900 I STORAGE  [initandlisten] WiredTiger message [1534666438:768263][597:0x7fffaa54a340], file:index-1-3618629488836829015.wt, txn-recover: Set global recovery timestamp: 0
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] 
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] 
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] 
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] 
+2018-08-19T17:13:58.864+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-08-19T17:13:58.890+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-08-19T17:13:58.891+0900 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-19T17:13:59.011+0900 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-08-19T17:14:01.387+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49244 #1 (1 connection now open)
+2018-08-19T17:14:01.418+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:49244 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T18:57:21.078+0900 I NETWORK  [conn1] end connection 127.0.0.1:49244 (0 connections now open)
+2018-08-19T18:59:44.252+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:58517 #2 (1 connection now open)
+2018-08-19T18:59:44.264+0900 I NETWORK  [conn2] received client metadata from 127.0.0.1:58517 conn2: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T19:02:07.262+0900 I NETWORK  [conn2] end connection 127.0.0.1:58517 (0 connections now open)
+2018-08-19T19:02:22.308+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:59073 #3 (1 connection now open)
+2018-08-19T19:02:22.321+0900 I NETWORK  [conn3] received client metadata from 127.0.0.1:59073 conn3: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T19:05:36.587+0900 I NETWORK  [conn3] end connection 127.0.0.1:59073 (0 connections now open)
+2018-08-19T19:05:40.789+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:59755 #4 (1 connection now open)
+2018-08-19T19:05:40.802+0900 I NETWORK  [conn4] received client metadata from 127.0.0.1:59755 conn4: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T19:06:28.944+0900 I NETWORK  [conn4] end connection 127.0.0.1:59755 (0 connections now open)
+2018-08-19T19:06:32.331+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:59935 #5 (1 connection now open)
+2018-08-19T19:06:32.349+0900 I NETWORK  [conn5] received client metadata from 127.0.0.1:59935 conn5: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T19:27:02.325+0900 I NETWORK  [conn5] end connection 127.0.0.1:59935 (0 connections now open)
+2018-08-19T19:30:28.993+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:64860 #6 (1 connection now open)
+2018-08-19T19:30:29.009+0900 I NETWORK  [conn6] received client metadata from 127.0.0.1:64860 conn6: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T19:31:16.478+0900 I NETWORK  [conn6] end connection 127.0.0.1:64860 (0 connections now open)
+2018-08-19T19:31:20.586+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:65029 #7 (1 connection now open)
+2018-08-19T19:31:20.599+0900 I NETWORK  [conn7] received client metadata from 127.0.0.1:65029 conn7: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T19:34:21.553+0900 I NETWORK  [conn7] end connection 127.0.0.1:65029 (0 connections now open)
+2018-08-19T19:34:32.439+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49287 #8 (1 connection now open)
+2018-08-19T19:34:32.453+0900 I NETWORK  [conn8] received client metadata from 127.0.0.1:49287 conn8: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-19T19:43:17.064+0900 I NETWORK  [conn8] end connection 127.0.0.1:49287 (0 connections now open)
+2018-08-20T23:14:00.095+0900 I CONTROL  [initandlisten] MongoDB starting : pid=914 port=27017 dbpath=/data/db 64-bit host=Seungjinui-MacBook-Pro.local
+2018-08-20T23:14:00.095+0900 I CONTROL  [initandlisten] db version v3.6.4
+2018-08-20T23:14:00.095+0900 I CONTROL  [initandlisten] git version: d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856
+2018-08-20T23:14:00.096+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
+2018-08-20T23:14:00.096+0900 I CONTROL  [initandlisten] allocator: system
+2018-08-20T23:14:00.096+0900 I CONTROL  [initandlisten] modules: none
+2018-08-20T23:14:00.096+0900 I CONTROL  [initandlisten] build environment:
+2018-08-20T23:14:00.096+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-20T23:14:00.096+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-20T23:14:00.096+0900 I CONTROL  [initandlisten] options: {}
+2018-08-20T23:14:00.096+0900 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2018-08-20T23:14:00.097+0900 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-20T23:14:00.097+0900 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-08-20T23:14:00.097+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-20T23:14:00.902+0900 I STORAGE  [initandlisten] WiredTiger message [1534774440:902016][914:0x7fffa66e9340], txn-recover: Main recovery loop: starting at 18/69248
+2018-08-20T23:14:00.902+0900 I STORAGE  [initandlisten] WiredTiger message [1534774440:902813][914:0x7fffa66e9340], txn-recover: Recovering log 18 through 19
+2018-08-20T23:14:00.971+0900 I STORAGE  [initandlisten] WiredTiger message [1534774440:971130][914:0x7fffa66e9340], txn-recover: Recovering log 19 through 19
+2018-08-20T23:14:01.091+0900 I STORAGE  [initandlisten] WiredTiger message [1534774441:91035][914:0x7fffa66e9340], txn-recover: Set global recovery timestamp: 0
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] 
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] 
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] 
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] 
+2018-08-20T23:14:01.174+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-08-20T23:14:01.200+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-08-20T23:14:01.201+0900 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-20T23:14:02.024+0900 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-08-20T23:14:05.828+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49316 #1 (1 connection now open)
+2018-08-20T23:14:05.843+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:49316 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-20T23:20:30.378+0900 I NETWORK  [conn1] end connection 127.0.0.1:49316 (0 connections now open)
+2018-08-20T23:21:10.067+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:50045 #2 (1 connection now open)
+2018-08-20T23:21:10.085+0900 I NETWORK  [conn2] received client metadata from 127.0.0.1:50045 conn2: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-20T23:25:14.021+0900 I NETWORK  [conn2] end connection 127.0.0.1:50045 (0 connections now open)
+2018-08-20T23:25:34.371+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:50668 #3 (1 connection now open)
+2018-08-20T23:25:34.389+0900 I NETWORK  [conn3] received client metadata from 127.0.0.1:50668 conn3: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-20T23:27:26.010+0900 I NETWORK  [conn3] end connection 127.0.0.1:50668 (0 connections now open)
+2018-08-20T23:27:41.050+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:50787 #4 (1 connection now open)
+2018-08-20T23:27:41.066+0900 I NETWORK  [conn4] received client metadata from 127.0.0.1:50787 conn4: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-20T23:40:44.069+0900 I NETWORK  [conn4] end connection 127.0.0.1:50787 (0 connections now open)
+2018-08-22T21:16:26.835+0900 I CONTROL  [initandlisten] MongoDB starting : pid=835 port=27017 dbpath=/data/db 64-bit host=Seungjinui-MacBook-Pro.local
+2018-08-22T21:16:26.835+0900 I CONTROL  [initandlisten] db version v3.6.4
+2018-08-22T21:16:26.835+0900 I CONTROL  [initandlisten] git version: d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856
+2018-08-22T21:16:26.835+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
+2018-08-22T21:16:26.835+0900 I CONTROL  [initandlisten] allocator: system
+2018-08-22T21:16:26.835+0900 I CONTROL  [initandlisten] modules: none
+2018-08-22T21:16:26.835+0900 I CONTROL  [initandlisten] build environment:
+2018-08-22T21:16:26.835+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-22T21:16:26.835+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-22T21:16:26.835+0900 I CONTROL  [initandlisten] options: {}
+2018-08-22T21:16:26.835+0900 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2018-08-22T21:16:26.836+0900 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-22T21:16:26.836+0900 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-08-22T21:16:26.836+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-22T21:16:27.655+0900 I STORAGE  [initandlisten] WiredTiger message [1534940187:655740][835:0x7fff9a528340], txn-recover: Main recovery loop: starting at 19/26880
+2018-08-22T21:16:27.657+0900 I STORAGE  [initandlisten] WiredTiger message [1534940187:657944][835:0x7fff9a528340], txn-recover: Recovering log 19 through 20
+2018-08-22T21:16:27.722+0900 I STORAGE  [initandlisten] WiredTiger message [1534940187:722953][835:0x7fff9a528340], txn-recover: Recovering log 20 through 20
+2018-08-22T21:16:27.838+0900 I STORAGE  [initandlisten] WiredTiger message [1534940187:838501][835:0x7fff9a528340], txn-recover: Set global recovery timestamp: 0
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] 
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] 
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] 
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] 
+2018-08-22T21:16:27.923+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-08-22T21:16:27.949+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-08-22T21:16:27.950+0900 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-22T21:16:28.011+0900 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-08-22T21:16:32.425+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49321 #1 (1 connection now open)
+2018-08-22T21:16:32.439+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:49321 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:22:59.909+0900 I NETWORK  [conn1] end connection 127.0.0.1:49321 (0 connections now open)
+2018-08-22T21:23:17.845+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49689 #2 (1 connection now open)
+2018-08-22T21:23:17.858+0900 I NETWORK  [conn2] received client metadata from 127.0.0.1:49689 conn2: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:23:48.475+0900 I NETWORK  [conn2] end connection 127.0.0.1:49689 (0 connections now open)
+2018-08-22T21:23:52.161+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49699 #3 (1 connection now open)
+2018-08-22T21:23:52.174+0900 I NETWORK  [conn3] received client metadata from 127.0.0.1:49699 conn3: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:25:40.551+0900 I NETWORK  [conn3] end connection 127.0.0.1:49699 (0 connections now open)
+2018-08-22T21:26:00.867+0900 I CONTROL  [initandlisten] MongoDB starting : pid=1078 port=27017 dbpath=/data/db 64-bit host=Seungjinui-MacBook-Pro.local
+2018-08-22T21:26:00.867+0900 I CONTROL  [initandlisten] db version v3.6.4
+2018-08-22T21:26:00.867+0900 I CONTROL  [initandlisten] git version: d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856
+2018-08-22T21:26:00.867+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
+2018-08-22T21:26:00.867+0900 I CONTROL  [initandlisten] allocator: system
+2018-08-22T21:26:00.867+0900 I CONTROL  [initandlisten] modules: none
+2018-08-22T21:26:00.867+0900 I CONTROL  [initandlisten] build environment:
+2018-08-22T21:26:00.867+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-22T21:26:00.867+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-22T21:26:00.867+0900 I CONTROL  [initandlisten] options: {}
+2018-08-22T21:26:00.869+0900 I STORAGE  [initandlisten] exception in initAndListen: DBPathInUse: Unable to lock the lock file: /data/db/mongod.lock (Resource temporarily unavailable). Another mongod instance is already running on the /data/db directory, terminating
+2018-08-22T21:26:00.869+0900 I CONTROL  [initandlisten] now exiting
+2018-08-22T21:26:00.869+0900 I CONTROL  [initandlisten] shutting down with code:100
+2018-08-22T21:26:12.368+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49746 #4 (1 connection now open)
+2018-08-22T21:26:12.378+0900 I NETWORK  [conn4] received client metadata from 127.0.0.1:49746 conn4: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:26:37.935+0900 I NETWORK  [conn4] end connection 127.0.0.1:49746 (0 connections now open)
+2018-08-22T21:27:02.499+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49759 #5 (1 connection now open)
+2018-08-22T21:27:02.510+0900 I NETWORK  [conn5] received client metadata from 127.0.0.1:49759 conn5: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:28:34.132+0900 I NETWORK  [conn5] end connection 127.0.0.1:49759 (0 connections now open)
+2018-08-22T21:28:39.860+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49765 #6 (1 connection now open)
+2018-08-22T21:28:39.865+0900 I NETWORK  [conn6] received client metadata from 127.0.0.1:49765 conn6: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:29:48.117+0900 I NETWORK  [conn6] end connection 127.0.0.1:49765 (0 connections now open)
+2018-08-22T21:30:10.017+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49800 #7 (1 connection now open)
+2018-08-22T21:30:10.022+0900 I NETWORK  [conn7] received client metadata from 127.0.0.1:49800 conn7: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:30:46.683+0900 I NETWORK  [conn7] end connection 127.0.0.1:49800 (0 connections now open)
+2018-08-22T21:31:05.160+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49835 #8 (1 connection now open)
+2018-08-22T21:31:05.165+0900 I NETWORK  [conn8] received client metadata from 127.0.0.1:49835 conn8: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:31:25.834+0900 I NETWORK  [conn8] end connection 127.0.0.1:49835 (0 connections now open)
+2018-08-22T21:33:17.842+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49839 #9 (1 connection now open)
+2018-08-22T21:33:17.847+0900 I NETWORK  [conn9] received client metadata from 127.0.0.1:49839 conn9: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:33:40.503+0900 I NETWORK  [conn9] end connection 127.0.0.1:49839 (0 connections now open)
+2018-08-22T21:33:47.692+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49840 #10 (1 connection now open)
+2018-08-22T21:33:47.697+0900 I NETWORK  [conn10] received client metadata from 127.0.0.1:49840 conn10: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:34:34.049+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49853 #11 (2 connections now open)
+2018-08-22T21:34:34.050+0900 I NETWORK  [conn11] received client metadata from 127.0.0.1:49853 conn11: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2018-08-22T21:34:34.116+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49854 #12 (3 connections now open)
+2018-08-22T21:34:34.116+0900 I NETWORK  [conn12] received client metadata from 127.0.0.1:49854 conn12: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2018-08-22T21:34:46.165+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49855 #13 (4 connections now open)
+2018-08-22T21:34:46.165+0900 I NETWORK  [conn13] received client metadata from 127.0.0.1:49855 conn13: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2018-08-22T21:34:46.202+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49856 #14 (5 connections now open)
+2018-08-22T21:34:46.202+0900 I NETWORK  [conn14] received client metadata from 127.0.0.1:49856 conn14: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2018-08-22T21:35:45.316+0900 I NETWORK  [conn10] end connection 127.0.0.1:49840 (4 connections now open)
+2018-08-22T21:35:47.559+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49862 #15 (5 connections now open)
+2018-08-22T21:35:47.564+0900 I NETWORK  [conn15] received client metadata from 127.0.0.1:49862 conn15: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:35:49.443+0900 I NETWORK  [conn15] end connection 127.0.0.1:49862 (4 connections now open)
+2018-08-22T21:36:13.900+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49863 #16 (5 connections now open)
+2018-08-22T21:36:13.905+0900 I NETWORK  [conn16] received client metadata from 127.0.0.1:49863 conn16: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-22T21:36:35.422+0900 I STORAGE  [conn16] createCollection: reactPost.accounts with generated UUID: bc3d201f-460e-4946-b6ba-8a1088cff0a3
+2018-08-22T21:37:31.107+0900 I STORAGE  [conn16] createCollection: reactPost.posts with generated UUID: 54ec12e4-8140-41c6-b737-910e26a8d1b6
+2018-08-22T21:44:10.132+0900 I NETWORK  [conn16] end connection 127.0.0.1:49863 (4 connections now open)
+2018-08-22T21:44:15.428+0900 I NETWORK  [conn13] end connection 127.0.0.1:49855 (3 connections now open)
+2018-08-22T21:44:15.432+0900 I NETWORK  [conn14] end connection 127.0.0.1:49856 (2 connections now open)
+2018-08-22T21:44:15.464+0900 I NETWORK  [conn12] end connection 127.0.0.1:49854 (1 connection now open)
+2018-08-22T21:44:15.464+0900 I NETWORK  [conn11] end connection 127.0.0.1:49853 (0 connections now open)
+2018-08-24T12:14:57.507+0900 I CONTROL  [initandlisten] MongoDB starting : pid=1720 port=27017 dbpath=/data/db 64-bit host=Seungjinui-MacBook-Pro.local
+2018-08-24T12:14:57.508+0900 I CONTROL  [initandlisten] db version v3.6.4
+2018-08-24T12:14:57.508+0900 I CONTROL  [initandlisten] git version: d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856
+2018-08-24T12:14:57.508+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
+2018-08-24T12:14:57.508+0900 I CONTROL  [initandlisten] allocator: system
+2018-08-24T12:14:57.508+0900 I CONTROL  [initandlisten] modules: none
+2018-08-24T12:14:57.508+0900 I CONTROL  [initandlisten] build environment:
+2018-08-24T12:14:57.508+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-24T12:14:57.508+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-24T12:14:57.508+0900 I CONTROL  [initandlisten] options: {}
+2018-08-24T12:14:57.508+0900 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2018-08-24T12:14:57.508+0900 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-24T12:14:57.509+0900 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-08-24T12:14:57.509+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-24T12:14:58.305+0900 I STORAGE  [initandlisten] WiredTiger message [1535080498:305716][1720:0x7fffb485b340], txn-recover: Main recovery loop: starting at 20/34048
+2018-08-24T12:14:58.307+0900 I STORAGE  [initandlisten] WiredTiger message [1535080498:307745][1720:0x7fffb485b340], txn-recover: Recovering log 20 through 21
+2018-08-24T12:14:58.378+0900 I STORAGE  [initandlisten] WiredTiger message [1535080498:378339][1720:0x7fffb485b340], file:sizeStorer.wt, txn-recover: Recovering log 21 through 21
+2018-08-24T12:14:58.506+0900 I STORAGE  [initandlisten] WiredTiger message [1535080498:506240][1720:0x7fffb485b340], file:sizeStorer.wt, txn-recover: Set global recovery timestamp: 0
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] 
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] 
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] 
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] 
+2018-08-24T12:14:58.594+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-08-24T12:14:58.624+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-08-24T12:14:58.625+0900 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-24T12:14:59.021+0900 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-08-24T12:15:02.014+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49297 #1 (1 connection now open)
+2018-08-24T12:15:02.028+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:49297 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-24T12:15:28.196+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49320 #2 (2 connections now open)
+2018-08-24T12:15:28.197+0900 I NETWORK  [conn2] received client metadata from 127.0.0.1:49320 conn2: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2018-08-24T12:15:28.277+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49321 #3 (3 connections now open)
+2018-08-24T12:15:28.277+0900 I NETWORK  [conn3] received client metadata from 127.0.0.1:49321 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2018-08-24T12:15:38.716+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49322 #4 (4 connections now open)
+2018-08-24T12:15:38.717+0900 I NETWORK  [conn4] received client metadata from 127.0.0.1:49322 conn4: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2018-08-24T12:15:38.755+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49323 #5 (5 connections now open)
+2018-08-24T12:15:38.755+0900 I NETWORK  [conn5] received client metadata from 127.0.0.1:49323 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2018-08-24T12:15:40.110+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49324 #6 (6 connections now open)
+2018-08-24T12:15:40.111+0900 I NETWORK  [conn6] received client metadata from 127.0.0.1:49324 conn6: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2018-08-24T12:15:40.159+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49325 #7 (7 connections now open)
+2018-08-24T12:15:40.159+0900 I NETWORK  [conn7] received client metadata from 127.0.0.1:49325 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.2.0" } }
+2018-08-24T12:17:40.583+0900 I NETWORK  [conn4] end connection 127.0.0.1:49322 (6 connections now open)
+2018-08-24T12:17:40.585+0900 I NETWORK  [conn6] end connection 127.0.0.1:49324 (5 connections now open)
+2018-08-24T12:17:40.585+0900 I NETWORK  [conn5] end connection 127.0.0.1:49323 (4 connections now open)
+2018-08-24T12:17:40.586+0900 I NETWORK  [conn7] end connection 127.0.0.1:49325 (3 connections now open)
+2018-08-24T12:17:40.627+0900 I NETWORK  [conn3] end connection 127.0.0.1:49321 (2 connections now open)
+2018-08-24T12:17:40.627+0900 I NETWORK  [conn2] end connection 127.0.0.1:49320 (1 connection now open)
+2018-08-24T12:43:49.680+0900 I NETWORK  [conn1] end connection 127.0.0.1:49297 (0 connections now open)
+2018-08-31T01:06:17.112+0900 I CONTROL  [initandlisten] MongoDB starting : pid=1182 port=27017 dbpath=/data/db 64-bit host=Seungjinui-MacBook-Pro.local
+2018-08-31T01:06:17.112+0900 I CONTROL  [initandlisten] db version v3.6.4
+2018-08-31T01:06:17.112+0900 I CONTROL  [initandlisten] git version: d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856
+2018-08-31T01:06:17.112+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
+2018-08-31T01:06:17.112+0900 I CONTROL  [initandlisten] allocator: system
+2018-08-31T01:06:17.112+0900 I CONTROL  [initandlisten] modules: none
+2018-08-31T01:06:17.112+0900 I CONTROL  [initandlisten] build environment:
+2018-08-31T01:06:17.112+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-31T01:06:17.112+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-31T01:06:17.112+0900 I CONTROL  [initandlisten] options: {}
+2018-08-31T01:06:17.113+0900 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2018-08-31T01:06:17.113+0900 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-31T01:06:17.113+0900 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-08-31T01:06:17.114+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-31T01:06:17.959+0900 I STORAGE  [initandlisten] WiredTiger message [1535645177:959977][1182:0x7fff921b4340], txn-recover: Main recovery loop: starting at 21/5888
+2018-08-31T01:06:17.960+0900 I STORAGE  [initandlisten] WiredTiger message [1535645177:960637][1182:0x7fff921b4340], txn-recover: Recovering log 21 through 22
+2018-08-31T01:06:18.025+0900 I STORAGE  [initandlisten] WiredTiger message [1535645178:25967][1182:0x7fff921b4340], txn-recover: Recovering log 22 through 22
+2018-08-31T01:06:18.153+0900 I STORAGE  [initandlisten] WiredTiger message [1535645178:153252][1182:0x7fff921b4340], txn-recover: Set global recovery timestamp: 0
+2018-08-31T01:06:18.257+0900 I CONTROL  [initandlisten] 
+2018-08-31T01:06:18.257+0900 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-31T01:06:18.257+0900 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-31T01:06:18.257+0900 I CONTROL  [initandlisten] 
+2018-08-31T01:06:18.257+0900 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-08-31T01:06:18.257+0900 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-08-31T01:06:18.257+0900 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-08-31T01:06:18.257+0900 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-08-31T01:06:18.257+0900 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-08-31T01:06:18.258+0900 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-08-31T01:06:18.258+0900 I CONTROL  [initandlisten] 
+2018-08-31T01:06:18.258+0900 I CONTROL  [initandlisten] 
+2018-08-31T01:06:18.258+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-08-31T01:06:18.287+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-08-31T01:06:18.287+0900 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-31T01:06:19.018+0900 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-08-31T01:06:21.660+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49432 #1 (1 connection now open)
+2018-08-31T01:06:21.671+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:49432 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.18" }
+2018-08-31T01:06:52.914+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:49448 #2 (2 connections now open)
+2018-08-31T01:19:54.687+0900 I NETWORK  [conn2] end connection 127.0.0.1:49448 (1 connection now open)
+2018-08-31T01:19:54.687+0900 I NETWORK  [conn1] end connection 127.0.0.1:49432 (0 connections now open)

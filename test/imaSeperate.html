@@ -1,0 +1,63 @@
+<html>
+<head>
+
+  <meta charset="UTF-8">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <script src="jquery.mosaic.js"></script>
+  <title>테스트</title>
+
+</head>
+
+<body>
+<div class="mosic-containter">
+  <div class="mosic-body">
+    <img src="abc2.jpg" id="test">
+  </div>
+  <div class="mosic-bottom">
+  </div>
+</div>
+</body>
+<script>
+seperate2 = function( $img ) {
+    var $absoluteDiv,
+        $hiddenDiv = $('<div id="hiddenDiv2"></div>'),
+        imgWidth = $img.width(),
+        imgHeight = $img.height(),
+        imgSrc = $img.attr( 'src' ),
+        seperateNum = 10,
+        i = 0,
+        isHover = false;
+    $hiddenDiv.height( imgHeight );
+    $hiddenDiv.width( imgWidth );
+    $hiddenDiv.appendTo( document.body );
+    $hiddenDiv.hover( function( e ) {
+        var length =  $( '.seperatedDiv2' ).length,
+            setClass = ( isHover ) ? 'removeClass' : 'addClass',
+            i = 1;
+        isHover = !isHover;
+
+        for( i = 1; i < 4; i++ ) {
+            $( '.seperatedDiv2' ).eq( length - i )[setClass]( 'num' + i );
+        }
+    });
+
+    for( i = 0; i  < seperateNum; i++ ) {
+        $absoluteDiv = $('<div class="seperatedDiv2" style="position: absolute;"></div>');
+        $absoluteDiv.css( {
+            width: imgWidth / seperateNum,
+            height: imgHeight,
+            left: ( i === 0 ) ? 0 : ( imgWidth / seperateNum ),
+            backgroundImage: 'url( ' + imgSrc + ' )',
+            backgroundPosition: ( -( imgWidth / seperateNum ) * i ) + 'px 0px'
+        });
+        $absoluteDiv.appendTo( $hiddenDiv );
+        $hiddenDiv = $absoluteDiv;
+    }
+
+};
+
+</script>
+
+</html>

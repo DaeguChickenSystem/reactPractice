@@ -1,0 +1,53 @@
+.mosic-containter{
+  position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #4e9ddc;
+      height: 100%;
+}
+
+.mosic-body{
+  position: relative;
+      width: 50%;
+      height: 50%;
+      background-size: 100% 100%;
+      border: 1px solid white;
+      left: 25%;
+      top: 22%;
+}
+
+.mosic-bottom{
+    position: fixed;
+    width: 12%;
+    height: 12%;
+    bottom: 10%;
+    right: 5%;
+    border-radius: 60%;
+    background: #fbe735;
+
+}
+
+.mosic-part{
+  position: relative;
+    width: 3%;
+    height: 3%;
+    float: left;
+    border: 1px solid gray;
+
+}
+
+.mosic-part:hover{
+  background: gray;
+  border:1px solid darkgray;
+}
+
+.selected-odd{
+  background: #fbfbfbf7;
+      filter: blur(2px);
+}
+.selected-even{
+  background: #cfd4d6;
+  filter: blur(3px);
+
+}
